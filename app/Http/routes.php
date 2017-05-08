@@ -9,14 +9,14 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+use App\Http\Controllers\DoExamController;
+
 
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
 Route::get('/doExam', 'DoExamController@doexam');
-
-//Route::get('/testonline/1','TestController@testOnline');
 		
 Route::post('/doExam', 'DoExamController@showresults');
 

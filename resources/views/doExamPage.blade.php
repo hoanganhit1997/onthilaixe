@@ -8,6 +8,7 @@
 			</h3>
 @stop         
 @section('answ01')
+
 	<?php  foreach($row as $key => $val){
 			if ($key == "c0") echo ($val);}?>
 @stop
@@ -19,6 +20,7 @@
 	<?php  foreach($row as $key => $val){
 			if ($key == "c2") echo ($val);}?>
 @stop
+	
 <?php  }
 	 foreach($data[1] as $row){
 ?>
