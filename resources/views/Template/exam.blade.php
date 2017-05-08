@@ -563,7 +563,7 @@
 					</div>
 				</div> 
     <a class="left carousel-control" href="#carousel-1" data-slide="prev">
-    	span class="glyphicon glyphicon-chevron-left"></span></a> 
+    	<span class="glyphicon glyphicon-chevron-left"></span></a> 
     <a class="right carousel-control" href="#carousel-1" data-slide="next">
     	<span class="glyphicon glyphicon-chevron-right"></span></a>
                 
