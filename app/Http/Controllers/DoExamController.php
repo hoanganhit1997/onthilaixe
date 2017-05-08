@@ -51,7 +51,7 @@ class DoExamController extends Controller {
 			$t =$i*3;
 			foreach($this->resultsDB[$i] as $row)
 				foreach($row as $key => $value){
-					echo ($key."=>".$value.'<br>');
+					//echo ($key."=>".$value.'<br>');
 					if($key == "a0" && $value == $this->data[$t])
 						if($key == "a1" && $value == $this->data[$t+1])
 							if($key == "a2" && $value == $this->data[$t+2])
