@@ -14,11 +14,11 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-Route::get('/doExam','DoExamController@doexam');
+Route::get('/doExam', 'DoExamController@doexam');
 
 //Route::get('/testonline/1','TestController@testOnline');
 		
-Route::post('/doExam','DoExamController@showresults');
+Route::post('/doExam', 'DoExamController@showresults');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

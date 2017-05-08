@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 use DB;
 use Illuminate\Http\Request;
 use App\TestOnline;
-class TestController extends Controller {
+class DoExamController extends Controller {
 	protected $resultsDB = array();
 	protected $data = array();
 	protected $results = array();
