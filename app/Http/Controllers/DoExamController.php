@@ -32,7 +32,7 @@ class TestController extends Controller {
 		foreach($_POST['cb'] as $row){
 			//echo $row.'<br>';
 			$temp = (floor($row/10))*3+$row%10;
-			$data($temp) = 1;
+			$data[$temp] = 1;
 		}
 		for($i = 0; $i < 10; $i++){
 			foreach($resultsDB[$i] as $key => $value){
