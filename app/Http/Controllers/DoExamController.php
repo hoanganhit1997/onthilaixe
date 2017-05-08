@@ -6,6 +6,16 @@ use DB;
 use Illuminate\Http\Request;
 use App\TestOnline;
 class DoExamController extends Controller {
+	//public static $instance;
+//	public static function getInstance()
+//    {
+//        if (null === static::$instance) {
+//            static::$instance = new static();
+//        }
+//        
+//        return static::$instance;
+//    }
+	
 	protected $resultsDB = array();
 	protected $data = array();
 	protected $results = array();
@@ -45,8 +55,8 @@ class DoExamController extends Controller {
 					if($key == "a0" && $value == $this->data[$t])
 						if($key == "a1" && $value == $this->data[$t+1])
 							if($key == "a2" && $value == $this->data[$t+2])
-								echo "<br><br>";
-								//$results[$i] = 1;
+								//echo "<br><br>";
+								$results[$i] = 1;
 				}
 		}		
 		return view('resultsPage')->with('res', $this->results);
