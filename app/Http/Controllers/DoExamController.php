@@ -9,41 +9,47 @@ class DoExamController extends Controller {
 	protected $resultsDB = array();
 	protected $data = array();
 	protected $results = array();
-	
-	protected function setup(){
-		for($i = 0; $i < 10; $i++){
-			$data[$i] = 0;
-			$results[$i] = 0;
-		}
-	}
-	
-	public function doexam(){
+
+	public function __construct(){
 		for($i = 0; $i<10; $i++) {
 			$id = rand(0,20);
 			$temp = TestOnline::where('id','=',$id)->get()->toArray();
-			$resultsDB[$i] = $temp;
+			$this->resultsDB[$i] = $temp;
 		}
-		//$results = DB::table('question')->get();
-		return view('doExamPage')->with('data', $resultsDB);
+		for($i = 0; $i < 10; $i++){
+			$t = $i*3;
+			$this->data[$t] = false;
+			$this->data[$t+1] = false;
+			$this->data[$t+2] = false;
+			$this->results[$i] = 0;
+		};
+	}
+	public function doexam(){
+		return view('doExamPage')->with('data', $this->resultsDB);
 		}
 		
 	public function showresults(){
-		setup();
+		
 		foreach($_POST['cb'] as $row){
 			//echo $row.'<br>';
 			$temp = (floor($row/10))*3+$row%10;
-			$data[$temp] = 1;
+			$this->data[$temp] = true;
+			
 		}
+		
 		for($i = 0; $i < 10; $i++){
-			foreach($resultsDB[$i] as $key => $value){
-				if($key == 'a0' && $value == $data[$i])
-					if($key == 'a1' && $value == $data[$i+1])
-						if($key == 'a2' && $value == $data[$i+2])
-							$results[$i/3] = 1;
-			}
-			$i+=3;
+			$t =$i*3;
+			foreach($this->resultsDB[$i] as $row)
+				foreach($row as $key => $value){
+					echo ($key."=>".$value.'<br>');
+					if($key == "a0" && $value == $this->data[$t])
+						if($key == "a1" && $value == $this->data[$t+1])
+							if($key == "a2" && $value == $this->data[$t+2])
+								echo "<br><br>";
+								//$results[$i] = 1;
+				}
 		}		
-		return view('resultsPage')->with('res', $results);
+		return view('resultsPage')->with('res', $this->results);
 	}
 	/**
 	 * Display a listing of the resource.

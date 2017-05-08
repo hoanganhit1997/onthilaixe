@@ -107,7 +107,7 @@
 			</h3>
             <div class="row">
             	<h4 class="text-center text-danger">
-					@yield('total')/20
+					@yield('total')/10
 				</h4>
             </div>
 		</div>

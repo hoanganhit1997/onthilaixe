@@ -13,7 +13,7 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -106,27 +106,27 @@
 <form  action="" method="POST" >
 <input type="hidden" name="_token" value="{{ csrf_token() }}">
       <br>
-		<div class="carousel slide" id="carousel-1" data-interval="9999999">
+		<div class="carousel slide" id="carousel-478118"  data-interval="9999999">
 				<ol class="carousel-indicators">
-					<li class="active" data-slide-to="0" data-target="#carousel-1">
+					<li class="active" data-slide-to="0" data-target="#carousel-478118">
 					</li>
-					<li data-slide-to="1" data-target="#carousel-1">
+					<li data-slide-to="1" data-target="#carousel-478118">
 					</li>
-					<li data-slide-to="2" data-target="#carousel-1">
+					<li data-slide-to="2" data-target="#carousel-478118">
 					</li>
-                    <li data-slide-to="3" data-target="#carousel-1">
+                    <li data-slide-to="3" data-target="#carousel-478118">
 					</li>
-                    <li data-slide-to="4" data-target="#carousel-1">
+                    <li data-slide-to="4" data-target="#carousel-478118">
 					</li>
-                    <li data-slide-to="5" data-target="#carousel-1">
+                    <li data-slide-to="5" data-target="#carousel-478118">
 					</li>
-                    <li data-slide-to="6" data-target="#carousel-1">
+                    <li data-slide-to="6" data-target="#carousel-478118">
 					</li>
-                    <li data-slide-to="7" data-target="#carousel-1">
+                    <li data-slide-to="7" data-target="#carousel-478118">
 					</li>
-                    <li data-slide-to="8" data-target="#carousel-1">
+                    <li data-slide-to="8" data-target="#carousel-478118">
 					</li>
-                    <li data-slide-to="9" data-target="#carousel-1">
+                    <li data-slide-to="9" data-target="#carousel-478118">
 					</li>
                     
 				</ol>
@@ -562,10 +562,14 @@
                                 </div>
 					</div>
 				</div> 
-    <a class="left carousel-control" href="#carousel-1" data-slide="prev">
-    	<span class="glyphicon glyphicon-chevron-left"></span></a> 
-    <a class="right carousel-control" href="#carousel-1" data-slide="next">
-    	<span class="glyphicon glyphicon-chevron-right"></span></a>
+  <a class="left carousel-control" href="#carousel-478118" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-478118" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
                 
   		</div>
                      <div class="row">
@@ -576,7 +580,7 @@
                     	</div>
                     </div>
  </form>  
-
+<script src="http://www.layoutit.com/js/bootstrap.min.js"></script>
 <!--
     <script src="http://www.layoutit.com/js/jquery.min.js"></script>
     <script src="http://www.layoutit.com/js/bootstrap.min.js"></script>
