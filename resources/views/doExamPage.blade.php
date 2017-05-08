@@ -1,5 +1,5 @@
 
-@extends('template/exam')
+@extends('Template/exam')
 	<?php foreach($data[0] as $row){ ?>
 @section('Ques0')
   			<h3>
