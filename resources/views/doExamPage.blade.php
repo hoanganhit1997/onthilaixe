@@ -161,7 +161,9 @@
 @section('Ques7')
   			<h3>
 				Câu 8<?php foreach($row as $key => $val){
-							if($key =="question") echo (':  '.$val);}?>
+							if($key =="question") echo (': '.$val." <br>");
+							if($key == "img_src") {
+								?><center><img src="<?php echo "pictures/".$val ?>" alt = ""/></center><?php }}?>
 			</h3>
 @stop         
 @section('answ71')
@@ -183,7 +185,9 @@
 @section('Ques8')
   			<h3>
 				Câu 9<?php foreach($row as $key => $val){
-							if($key =="question") echo (':  '.$val);}?>
+							if($key =="question") echo (': '.$val." <br>");
+							if($key == "img_src") {
+								?><center><img src="<?php echo "pictures/".$val ?>" alt = ""/></center><?php }}?>
 			</h3>
 @stop         
 @section('answ81')
@@ -205,7 +209,9 @@
 @section('Ques9')
   			<h3>
 				Câu 10<?php foreach($row as $key => $val){
-							if($key =="question") echo (':  '.$val);}?>
+							if($key =="question") echo (': '.$val." <br>");
+							if($key == "img_src") {
+								?><center><img src="<?php echo "pictures/".$val ?>" alt = ""/></center><?php }}?>
 			</h3>
 @stop         
 @section('answ91')
