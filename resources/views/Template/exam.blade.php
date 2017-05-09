@@ -2,39 +2,26 @@
 @section('page')
 	
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-10">
 			 <h2>
 				Đề thi ngẫu nhiên
 				</h2>
 		</div>
+<script language="JavaScript">
+                
+                 
+</script>
+<form name= "checkform" action="" method="POST" >
+<input type="hidden" name="_token" value="{{ csrf_token() }}" />
+        <div class = "col-md-2">
+        	 <h2><span class="label label-warning" id="clock" ></span></h2>
+        </div>
 	</div>
-<form  action="" method="POST" >
-<input type="hidden" name="_token" value="{{ csrf_token() }}">
+
       <br>
-		<div class="carousel slide" id="carousel-478118"  data-interval="9999999">
-				<ol class="carousel-indicators">
-					<li class="active" data-slide-to="0" data-target="#carousel-478118">
-					</li>
-					<li data-slide-to="1" data-target="#carousel-478118">
-					</li>
-					<li data-slide-to="2" data-target="#carousel-478118">
-					</li>
-                    <li data-slide-to="3" data-target="#carousel-478118">
-					</li>
-                    <li data-slide-to="4" data-target="#carousel-478118">
-					</li>
-                    <li data-slide-to="5" data-target="#carousel-478118">
-					</li>
-                    <li data-slide-to="6" data-target="#carousel-478118">
-					</li>
-                    <li data-slide-to="7" data-target="#carousel-478118">
-					</li>
-                    <li data-slide-to="8" data-target="#carousel-478118">
-					</li>
-                    <li data-slide-to="9" data-target="#carousel-478118">
-					</li>
-                    
-				</ol>
+<!-- ////////////////////////////////////////////////////// -->      
+		<div class="carousel slide" id="carousel-1"  data-interval="9999999">
+				
 				<div class="carousel-inner">
 
 					<div class="item active">
@@ -449,7 +436,7 @@
                                 	<div class="col-md-3">
                                     </div>
 									<div class="col-md-9">
-                                            <input type="checkbox" name="cb[]" value="299" /> 
+                                            <input type="checkbox" name="cb[]" value="29" /> 
                                             @yield('answ92')
                                             <br><br>
                                     </div>
@@ -467,28 +454,59 @@
                                 </div>
 					</div>
 				</div> 
-  <a class="left carousel-control" href="#carousel-478118" role="button" data-slide="prev">
+  <a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#carousel-478118" role="button" data-slide="next">
+  <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
   </a>
-                
-  		</div>
-                     <div class="row">
-                    	<div class="col-md-5">
-                    	</div>
-						<div class="col-md-7">
-                    	 <input type="submit" name="submit-form" value="Finish"/>
-                    	</div>
+  	</div>	
+   </div> 
+   
+   
+      <div class = "row">
+		<div class="container-fluid,carousel-indicators">
+                <center>
+                <ul class="pagination pagination-lg">
+                    <li data-slide-to="0" data-target="#carousel-1">
+                        <a>1</a>
+                    </li>
+                    <li data-slide-to="1" data-target="#carousel-1">
+                        <a>2</a>
+                    </li>
+                    <li data-slide-to="2" data-target="#carousel-1">
+                        <a>3</a>
+                    </li>
+                    <li data-slide-to="3" data-target="#carousel-1">
+                        <a>4</a>
+                    </li>
+                    <li data-slide-to="4" data-target="#carousel-1">
+                        <a>5</a>
+                    </li>
+                    <li data-slide-to="5" data-target="#carousel-1">
+                        <a>6</a>
+                    </li>
+                    <li data-slide-to="6" data-target="#carousel-1">
+                        <a>7</a>
+                    </li>
+                    <li data-slide-to="7" data-target="#carousel-1">
+                        <a>8</a>
+                    </li>
+                    <li data-slide-to="8" data-target="#carousel-1">
+                        <a>9</a>
+                    </li>
+                    <li data-slide-to="9" data-target="#carousel-1">
+                        <a>10</a>
+                    </li>
+                </ul>
+                </center>
+		  </div>
+		</div>
+                     <div class="row">	
+                    	 <center><input id = "sumbit" type="submit" name="submit-form" value="Finish" /></center>
                     </div>
  </form>  
-<script src="http://www.layoutit.com/js/bootstrap.min.js"></script>
-<!--
-    <script src="http://www.layoutit.com/js/jquery.min.js"></script>
-    <script src="http://www.layoutit.com/js/bootstrap.min.js"></script>
-    <script src="http://www.layoutit.com/js/scripts.js"></script>-->
+
+    <script src="/onthilaixe/counttime.js"></script>
 </html>
 @stop
