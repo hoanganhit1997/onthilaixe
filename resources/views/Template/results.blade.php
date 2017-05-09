@@ -1,6 +1,5 @@
 @extends('Template/header')
 @section('page')
-    <div class="container-fluid">
     <div class="row">
     	<h1 class="text-center">
 			Kết quả bài thi
@@ -107,6 +106,4 @@
 		<div class="col-md-1">
         </div>
 	</div>
-  </body>
-</html>
 @stop

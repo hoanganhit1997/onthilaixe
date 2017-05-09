@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use DB;
 use Illuminate\Http\Request;
 use App\TestOnline;
+use App\question_img;
 class DoExamController extends Controller {
 		
 	protected $data = array();
@@ -21,22 +22,24 @@ class DoExamController extends Controller {
 		};
 	}
 	public function doexam(){
+		
 		for($i = 0; $i<10; $i++) {
 			$id = rand(0,20);
-			$_SESSION["id[$i]"] = $id;
 			$temp = TestOnline::where('id','=',$id)->get()->toArray();
 			$resultsDB[$i] = $temp;
+			$_SESSION["dtb[$i]"] = $temp;
 		}
+		
 		return view('doExamPage')->with('data', $resultsDB);
 	}
 		
 	public function showresults(){
-		
+		if(isset($_POST['cb']))
 		foreach($_POST['cb'] as $row){
 			$this->data[$row] = 1;		
 		}
 		for($i = 0; $i<10; $i++) {
-			$temp = TestOnline::where('id','=',($_SESSION["id[$i]"]))->get()->toArray();
+			$temp = $_SESSION["dtb[$i]"];
 			$t =$i*3 + 1;
 			foreach($temp as $row){
 				$temp = 0;
