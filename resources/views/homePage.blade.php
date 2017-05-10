@@ -44,7 +44,7 @@
 								Tổng hợp kết quả các câu hỏi.
 							</div>
 							<p>
-								<a class="btn btn-primary" href="#">Chưa cập nhập</a>
+								<a class="btn btn-primary" href="#">Xem</a>
 							</p>
 						</div>
 					</div>
@@ -59,7 +59,7 @@
 								Các loại biển báo
 							</h3>
 							<p>
-								<a class="btn btn-primary" href="#">Chưa cập nhật</a>
+								<a class="btn btn-primary" href="bienbao">Xem</a>
 							</p>
 						</div>
 					</div>
@@ -72,7 +72,7 @@
 								Mẹo thi
 							</h3>
 							<p>
-								<a class="btn btn-primary" href="#">Chưa cập nhật</a>
+								<a class="btn btn-primary" href="meo">Xem</a>
 							</p>
 						</div>
 					</div>
@@ -85,7 +85,7 @@
 								Các dạng bài thi
 							</h3>
 							<p>
-								<a class="btn btn-primary" href="#">Chưa cập nhập</a>
+								<a class="btn btn-primary" href="#">Xem</a>
 							</p>
 						</div>
 					</div>

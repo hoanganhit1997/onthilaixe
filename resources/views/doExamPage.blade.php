@@ -4,21 +4,21 @@
 @section('Ques0')
   			<h3>
 				Câu 1<?php foreach($row as $key => $val){
-						if($key =="question") echo (':  '.$val);}?>
+						if($key =="question") {echo (':  '.$val); break;}}?>
 			</h3>
 @stop         
 @section('answ01')
 
 	<?php  foreach($row as $key => $val){
-			if ($key == "c0") echo ($val);}?>
+			if ($key == "c0") {echo ($val); break;};}?>
 @stop
 @section('answ02')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c1") echo ($val);}?>
+			if ($key == "c1") {echo ($val); break;};}?>
 @stop
 @section('answ03')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c2") echo ($val);}?>
+			if ($key == "c2") {echo ($val); break;};}?>
 @stop
 	
 <?php  }
@@ -29,20 +29,20 @@
 @section('Ques1')
   			<h3>
 				Câu 2<?php foreach($row as $key => $val){
-							if($key =="question") echo (':  '.$val);}?>
+							if($key =="question") {echo (':  '.$val); break;}}?>
 			</h3>
 @stop         
 @section('answ11')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c0") echo ($val);}?>
+			if ($key == "c0") {echo ($val); break;};}?>
 @stop
 @section('answ12')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c1") echo ($val);}?>
+			if ($key == "c1") {echo ($val); break;};}?>
 @stop
 @section('answ13')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c2") echo ($val);}?>
+			if ($key == "c2") {echo ($val); break;};}?>
 @stop
 
 <?php  }
@@ -51,20 +51,20 @@
 @section('Ques2')
   			<h3>
 				Câu 3<?php foreach($row as $key => $val){
-							if($key =="question") echo (':  '.$val);}?>
+							if($key =="question") {echo (':  '.$val); break;}}?>
 			</h3>
 @stop         
 @section('answ21')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c0") echo ($val);}?>
+			if ($key == "c0") {echo ($val); break;};}?>
 @stop
 @section('answ22')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c1") echo ($val);}?>
+			if ($key == "c1") {echo ($val); break;};}?>
 @stop
 @section('answ23')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c2") echo ($val);}?>
+			if ($key == "c2") {echo ($val); break;};}?>
 @stop
 
 <?php  }
@@ -73,20 +73,20 @@
 @section('Ques3')
   			<h3>
 				Câu 4<?php foreach($row as $key => $val){
-							if($key =="question") echo (':  '.$val);}?>
+							if($key =="question") {echo (':  '.$val); break;}}?>
 			</h3>
 @stop         
 @section('answ31')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c0") echo ($val);}?>
+			if ($key == "c0") {echo ($val); break;};}?>
 @stop
 @section('answ32')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c1") echo ($val);}?>
+			if ($key == "c1") {echo ($val); break;};}?>
 @stop
 @section('answ33')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c2") echo ($val);}?>
+			if ($key == "c2") {echo ($val); break;};}?>
 @stop
 
 <?php  }
@@ -95,20 +95,20 @@
 @section('Ques4')
   			<h3>
 				Câu 5<?php foreach($row as $key => $val){
-							if($key =="question") echo (':  '.$val);}?>
+							if($key =="question") {echo (':  '.$val); break;}}?>
 			</h3>
 @stop         
 @section('answ41')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c0") echo ($val);}?>
+			if ($key == "c0") {echo ($val); break;};}?>
 @stop
 @section('answ42')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c1") echo ($val);}?>
+			if ($key == "c1") {echo ($val); break;};}?>
 @stop
 @section('answ43')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c2") echo ($val);}?>
+			if ($key == "c2") {echo ($val); break;};}?>
 @stop
 
 <?php  }
@@ -117,20 +117,20 @@
 @section('Ques5')
   			<h3>
 				Câu 6<?php foreach($row as $key => $val){
-							if($key =="question") echo (':  '.$val);}?>
+							if($key =="question") {echo (':  '.$val); break;}}?>
 			</h3>
 @stop         
 @section('answ51')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c0") echo ($val);}?>
+			if ($key == "c0") {echo ($val); break;};}?>
 @stop
 @section('answ52')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c1") echo ($val);}?>
+			if ($key == "c1") {echo ($val); break;};}?>
 @stop
 @section('answ53')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c2") echo ($val);}?>
+			if ($key == "c2") {echo ($val); break;};}?>
 @stop
 
 <?php  }
@@ -139,20 +139,20 @@
 @section('Ques6')
   			<h3>
 				Câu 7<?php foreach($row as $key => $val){
-							if($key =="question") echo (':  '.$val);}?>
+							if($key =="question") {echo (':  '.$val); break;}}?>
 			</h3>
 @stop         
 @section('answ61')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c0") echo ($val);}?>
+			if ($key == "c0") {echo ($val); break;};}?>
 @stop
 @section('answ62')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c1") echo ($val);}?>
+			if ($key == "c1") {echo ($val); break;};}?>
 @stop
 @section('answ63')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c2") echo ($val);}?>
+			if ($key == "c2") {echo ($val); break;};}?>
 @stop
 
 <?php  }
@@ -163,20 +163,21 @@
 				Câu 8<?php foreach($row as $key => $val){
 							if($key =="question") echo (': '.$val." <br>");
 							if($key == "img_src") {
-								?><center><img src="<?php echo "pictures/".$val ?>" alt = ""/></center><?php }}?>
+								?><center><img src="<?php echo "picture/".$val ;
+								?>" alt = ""/></center><?php }}?>
 			</h3>
 @stop         
 @section('answ71')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c0") echo ($val);}?>
+			if ($key == "c0") {echo ($val); break;};}?>
 @stop
 @section('answ72')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c1") echo ($val);}?>
+			if ($key == "c1") {echo ($val); break;};}?>
 @stop
 @section('answ73')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c2") echo ($val);}?>
+			if ($key == "c2") {echo ($val); break;};}?>
 @stop
 
 <?php  }
@@ -187,20 +188,21 @@
 				Câu 9<?php foreach($row as $key => $val){
 							if($key =="question") echo (': '.$val." <br>");
 							if($key == "img_src") {
-								?><center><img src="<?php echo "pictures/".$val ?>" alt = ""/></center><?php }}?>
+								?><center><img src="<?php echo "picture/".$val;
+								?>" alt = ""/></center><?php }}?>
 			</h3>
 @stop         
 @section('answ81')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c0") echo ($val);}?>
+			if ($key == "c0") {echo ($val); break;};}?>
 @stop
 @section('answ82')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c1") echo ($val);}?>
+			if ($key == "c1") {echo ($val); break;};}?>
 @stop
 @section('answ83')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c2") echo ($val);}?>
+			if ($key == "c2") {echo ($val); break;};}?>
 @stop
 
 <?php  }
@@ -211,20 +213,21 @@
 				Câu 10<?php foreach($row as $key => $val){
 							if($key =="question") echo (': '.$val." <br>");
 							if($key == "img_src") {
-								?><center><img src="<?php echo "pictures/".$val ?>" alt = ""/></center><?php }}?>
+								?><center><img src="<?php echo "picture/".$val;
+								?>" alt = ""/></center><?php }}?>
 			</h3>
 @stop         
 @section('answ91')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c0") echo ($val);}?>
+			if ($key == "c0") {echo ($val); break;};}?>
 @stop
 @section('answ92')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c1") echo ($val);}?>
+			if ($key == "c1") {echo ($val); break;};}?>
 @stop
 @section('answ93')
 	<?php  foreach($row as $key => $val){
-			if ($key == "c2") echo ($val);}?>
+			if ($key == "c2") {echo ($val); break;};}?>
 @stop
 <?php  }
 	 

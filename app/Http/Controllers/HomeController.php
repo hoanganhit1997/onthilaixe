@@ -18,12 +18,7 @@ class HomeController extends Controller {
 	 *
 	 * @return void
 	 */
-	public function __construct()
-	{
-		$this->middleware('auth');
-	}
-
-	/**
+		/**
 	 * Show the application dashboard to the user.
 	 *
 	 * @return Response
@@ -31,6 +26,16 @@ class HomeController extends Controller {
 	public function index()
 	{
 		return view('home');
+	}
+
+	public function toMeo()
+	{
+		return view('meo');
+	}
+
+	public function toBienBao()
+	{
+		return view('bienBao');
 	}
 
 }

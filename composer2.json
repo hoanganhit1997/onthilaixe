@@ -1,0 +1,11 @@
+{
+    "require": {
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "require-dev": {
+        "behat/behat": "^3.2@dev"
+    }
+}
