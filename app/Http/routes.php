@@ -16,13 +16,17 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-Route::get('/doExam', 'DoExamController@doexam');
+Route::get('doExam', 'DoExamController@doexam');
 
-Route::get('meo', "HomeController@toMeo");
+Route::get('meo', "WelcomeController@toMeo");
 
-Route::get('bienbao', "HomeController@toBienBao");
+Route::get('bienbao', "WelcomeController@toBienBao");
 		
-Route::post('/doExam', 'DoExamController@showresults');
+Route::post('doExam', 'DoExamController@showresults');
+
+Route::get('doExam/{id}','DoExamController@doexamwithid');
+
+Route::get('chooseExam','WelcomeController@chooseexam');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

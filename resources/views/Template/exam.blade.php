@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="col-md-10">
 			 <h2>
-				Đề thi ngẫu nhiên
+				@yield('exam')
 			 </h2>
 		</div>
         <div class = "col-md-2">

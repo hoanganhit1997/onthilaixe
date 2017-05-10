@@ -1,5 +1,12 @@
 
 @extends('Template/exam')
+
+@section('exam')
+	<?php 
+		if(isset($key)) echo "Bộ đề thi số ".($key + 1);
+		else echo "Bộ đề thi ngẫu nhiên";
+	?>
+@stop
 	<?php foreach($data[0] as $row) ?>
 @section('ans0')
 	<?php getanswer(0, $row);?>

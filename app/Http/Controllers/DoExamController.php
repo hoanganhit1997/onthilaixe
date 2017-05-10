@@ -67,7 +67,26 @@ class DoExamController extends Controller {
 		
 		return view('doExamPage')->with('data', $resultsDB);
 	}
-		
+	public function doexamwithid($id){
+		if($id == 0) $startId = 0;
+		else if($id == 1) $startId = 2;
+		else if($id == 1) $startId = 4;
+		else $startId = 6;
+		for($i = 0 ; $i<7; $i++) {
+			$temp = TestOnline::where('id','=',$startId + $i)->get()->toArray();
+			$resultsDB[$i] = $temp;
+			$_SESSION["dtb[$i]"] = $temp;
+		}
+		for($i = 7; $i<10; $i++) {
+			$temp = question_img::where('id','=',$startId++)->get()->toArray();
+			$resultsDB[$i] = $temp;
+			$_SESSION["dtb[$i]"] = $temp;	
+		}
+		return view('doExamPage')->with([
+		'data'=>$resultsDB,
+		'key'=>$id,
+		]);
+	}	
 	public function showresults(){
 		if(isset($_POST['cb']))
 		foreach($_POST['cb'] as $row){
